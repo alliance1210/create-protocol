@@ -1,0 +1,208 @@
+.create-collection-container{
+    min-height: 90vh;
+    max-width: 90vw;
+    /* background-color: whitesmoke; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* gap:50px; */
+    padding: 25px 0 0 100px;
+    
+}
+
+#collection-title{
+    display: flex;
+    justify-content: space-between;
+    padding:15px 10px 15px 5px;
+    max-height: 45px;
+    width: 100%;
+}
+
+
+#collection-title ul li{
+    list-style-type: none;
+}
+
+#collection-title ul li:first-child{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.collection-body{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin:40px 0 30px 20px;
+}
+
+.collection-body-left-title{
+    font-size: 1.4rem;
+}
+
+.collection-body-left-card{
+    
+    background-color: whitesmoke;
+    max-width: 450px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+.body-left-imgcontainer{
+    width: 100%;
+    height: 250px;
+    background-image: url('../../Assets/Images/collection.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    /* backdrop-filter: blur(1px); */
+    /* -webkit-filter: blur(1px); */
+}
+.body-left-imgcontainer:hover{
+    /* filter: blur(1px);
+    -webkit-filter: blur(1px);
+    z-index: -1; */
+
+    background:linear-gradient(rgb(69, 62, 62) 0%, rgb(73, 68, 68) 90%),
+                        url('../../Assets/Images/collection.png') 30px;
+                        /* url('../../Assets/Images/collection.png') 20px;  */
+                /* linear-gradient(to right, purple 0%, yellow 90%); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:screen ;
+}
+#collection-card-button{
+    color:white;
+    background: transparent;
+    border:3px solid white ;
+    letter-spacing: 2.5px;
+    line-height: 2.5;
+    font-weight: 400;
+    border-radius: 8px;
+    /* display: none; */
+}
+#collection-card-button:hover{
+    cursor:pointer;
+    
+}
+.body-left-body{
+    line-height: 0.2;
+}
+.body-left-body table{
+    border-collapse: separate;
+    border-spacing: 0.5rem 1rem;
+    padding:4px;
+}
+.body-left-body table h3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.body-left-body table input,textarea{
+    border-radius: 5px;
+    border:none;
+    height: 2rem;
+    font-size: 1rem;
+}
+.body-left-body table textarea{
+    width:100%;
+    min-height: 100px;
+    resize: none;
+}
+.body-left-body table input:focus, textarea:focus{
+    outline: none;
+}
+
+
+
+
+
+
+.collection-body-right{
+    margin: 50px 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-body-container{
+    border-left: 2px solid black;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    /* text-align: left!important; */
+}
+
+.right-body-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.right-body-body{
+    margin: 10px 0
+}
+
+
+#cancel{
+    background-color: white;
+    font-size: 1rem;
+    margin: 10px;
+    min-width: 100px ;
+    min-height: 50px ;
+    padding:15px 35px;
+    border-radius: 8px;
+}
+#cancel:hover{
+    cursor: pointer;
+}
+
+#deploy{
+    background-color: black;
+    color:white;
+    font-size: 1rem;
+    margin: 10px;
+    min-width: 100px ;
+    min-height: 50px ;
+    padding:15px 35px;
+    border-radius: 8px;
+    border-radius: 10px 45px 10px 10px;
+}
+#deploy:hover{
+    cursor: pointer;
+    background-color: #7400FF;
+}
+
+
+@media screen and (max-width: 760px) {
+    .collection-body{
+        display: block;
+    }
+    #collection-title{
+        margin-top: 50px;
+        flex-direction: column-reverse;
+        width: 100%;
+        
+
+    }
+    .right-body-container{
+        display:none;
+    }
+    .collection-body{
+        margin:0;
+    }
+    .body-left-body table input{
+        width: 100%;
+    }
+    #deploy{
+        width: 200px;
+    }
+    #cancel{
+        width: 100px;
+        text-align: center;
+    }
+}

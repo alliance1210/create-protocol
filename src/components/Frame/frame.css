@@ -1,0 +1,70 @@
+.frame-container{
+    background-color: #F5F5F5;
+    margin:20px 0 0 0 ;
+    display: flex;
+    padding: 10px;
+    border-radius: 8px 52px 8px 8px;
+    max-width: 500px;
+    max-height: 170px;
+    font-size: 0.8rem;
+}
+
+
+.frame-img-container{
+    border-radius: 13px 34px 13px 13px;
+    overflow: hidden;
+    margin:3px;
+    max-width: 150px;
+    max-height: 100%;
+}
+
+.frame-title{
+    display:flex;
+    justify-content: space-between;
+}
+.frame-title button{
+    max-height: 30px;
+    border-radius: 20px;
+    margin: 3px 5px 0 0;
+    background-color: #8E30FF;
+    color:white;
+    border: none;
+}
+.frame-right{
+    margin:0 10px;
+}
+
+#frame-hover{
+    background-color: #8e30ff;
+    cursor: pointer;
+    color:white;
+}
+#frame-hover .frame-right .frame-title button{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+}
+.frame-footer{
+    display: flex;
+    max-height: 50px;
+    line-height: 0.3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.special-foot{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding:5px;
+    width: 50%;
+    text-align: center;
+    /* max-height:50px ; */
+    
+}
+
+@media screen and(max-width: 450px) {
+    .frame-left .frame-img-container{
+        width: 100px;
+        overflow: none;
+    }
+}
